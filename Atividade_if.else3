@@ -1,1 +1,28 @@
 
+import java.util.Scanner;
+
+public class AT3 {
+    
+    public static void main(String[] args) {
+        
+     Scanner scanner = new Scanner(System.in);
+       
+       String nome;
+       String senha;
+
+        System.out.println("Informe um nome de usuario ");
+        nome = scanner.nextLine();
+        
+        System.out.println("Informe sua senha ");
+        senha = scanner.nextLine();
+        
+        if(nome.equals("usuario") && senha.equals("senha123")) {
+        System.out.println("login correto");
+        }else{ 
+        System.out.println("login incorreto");
+        }
+        
+        scanner.close();
+        
+    }
+ }
